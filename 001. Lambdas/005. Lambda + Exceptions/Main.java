@@ -9,9 +9,9 @@ public class Main {
         valores.forEach(s -> {
             try{
                 int num = Integer.parseInt(s);
-                System.out.println(valores);
+                System.out.println("Número válido: " + num);
             }catch(NumberFormatException ex){
-                System.out.println("Error: "+ex);
+                System.out.println("Número inválido: "+ex);
             }
         });
     }
