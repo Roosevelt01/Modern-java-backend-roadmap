@@ -13,10 +13,10 @@ public class Main {
         );
 
         List<Double> result = amounts.stream()
-                .peek(n -> System.out.println("Imprimiendo montos: "+n))
+                .peek(n -> System.out.println("Monto original: "+n))
                 .filter(n -> n >1000)
-                .peek(n -> System.out.println("Imprimpiendo monto mayores a 1000: "+n))
-                .map(n -> n * 0.10)
+                .peek(n -> System.out.println("Monto aprobado: "+n))
+                .map(n -> n * 1.10)
                 .toList();
 
         result.forEach(System.out::println);
